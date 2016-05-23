@@ -142,7 +142,7 @@ module.exports = {
                 Windows.Devices.Geolocation.PositionAccuracy.high :
                 Windows.Devices.Geolocation.PositionAccuracy.default;
 
-        if (cordova.platformId == 'windows' && WinJS.Utilities.isPhone) {
+        if (cordova.platformId == 'windows') {
             // on Windows Phone 8.1 'positionchanged' event fails with error below if movementThreshold is not set
             // JavaScript runtime error: Operation aborted
             // You must set the MovementThreshold property or the ReportInterval property before adding event handlers.
